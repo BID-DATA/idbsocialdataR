@@ -9,6 +9,7 @@
 #' @import httr
 #' @import stringr
 #' @import jsonlite
+#' @importFrom jsonlite flatten
 #' @import dplyr
 #' @importFrom tidyr gather
 #' @importFrom dplyr left_join

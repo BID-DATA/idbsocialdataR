@@ -119,6 +119,7 @@ query_dictionary <- function(indicator='All',collection='All',resource='All'){
 #' @import stringr
 #' @import readr
 #' @import jsonlite
+#' @importFrom jsonlite flatten
 #' @importFrom tidyr gather
 #' @export
 #' @examples
