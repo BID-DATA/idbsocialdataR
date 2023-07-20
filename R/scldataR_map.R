@@ -2,9 +2,8 @@
 #' @param level Optional.  (1, 2)
 #' @param isoalpha3 Optional. countries (alpha-3 country code)
 #' @return A data frame with selected indicators
-#' @import dplyr
-#' @import stringr
-#' @import readr
+#' @importFrom stringr str_c
+#' @importFrom sf read_sf
 #' @importFrom tidyr gather
 #' @export
 #' @examples
@@ -37,12 +36,12 @@ get_map <- function(level='All', isoalpha3='All'){
 #' @param level Optional.  (1, 2)
 #' @param isoalpha3 Optional. countries (alpha-3 country code)
 #' @return A data frame with selected indicators
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @import ggplot2
+#' @importFrom dplyr left_join
+#' @importFrom stringr str_c
+#' @importFrom ggplot2 aes
+#' @importFrom ggplot2 geom_sf
+#' @importFrom ggplot2 ggplot aes scale_fill_distiller labs theme element_blank
 #' @importFrom scales pretty_breaks
-#' @importFrom tidyr gather
 #' @export
 #' @examples
 #' get_map(level='1',isoalpha3="ARG")

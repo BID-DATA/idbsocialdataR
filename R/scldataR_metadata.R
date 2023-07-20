@@ -1,9 +1,8 @@
 #' Get countries
 #' @return A data frame with countries
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @import jsonlite
+#' @importFrom stringr str_c
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble
 #' @importFrom tidyr gather
 #' @export
 #' @examples
@@ -24,10 +23,10 @@ get_countries <- function(){
 
 #' Get sources
 #' @return A data frame with countries
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @import jsonlite
+#' @importFrom stringr str_c
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble
+#' @importFrom tidyr gather
 #' @importFrom tidyr gather
 #' @export
 #' @examples
@@ -48,10 +47,9 @@ get_sources <- function(){
 
 #' Get themes
 #' @return A data frame with countries
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @import jsonlite
+#' @importFrom stringr str_c
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble
 #' @importFrom tidyr gather
 #' @export
 #' @examples
@@ -78,11 +76,9 @@ get_themes <- function(){
 #' @param theme_en Optional.
 #' @param theme_es Optional.
 #' @return A data frame with dictionary
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @import jsonlite
-#' @importFrom tidyr gather
+#' @importFrom stringr str_c
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble
 #' @export
 #' @examples
 #' query_dictionary()
@@ -115,10 +111,9 @@ query_dictionary <- function(indicator='All',collection='All',resource='All'){
 #' @param theme_en Optional.
 #' @param theme_es Optional.
 #' @return A data frame with dictionary
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @import jsonlite
+#' @importFrom httr GET http_error http_status content
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble
 #' @importFrom jsonlite flatten
 #' @importFrom tidyr gather
 #' @export

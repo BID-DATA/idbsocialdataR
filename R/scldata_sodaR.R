@@ -6,13 +6,9 @@
 #' @param yearend Optional. End of the year range
 #' @param latest Optional. Latest data point available
 #' @return A data frame with selected indicators
-#' @import httr
-#' @import stringr
-#' @import jsonlite
-#' @importFrom jsonlite flatten
-#' @import dplyr
-#' @importFrom tidyr gather
-#' @importFrom dplyr left_join
+#' @importFrom httr GET http_error content
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble left_join
 #' @export
 #' @examples
 #' query_indicator_soda(indicator="pobreza", categories=c('sex','age'), countries='MEX')
