@@ -4,10 +4,8 @@
 #' @param yearstart Optional. yearstart
 #' @param yearend Optional. yearend
 #' @return A data frame with found results
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @importFrom tidyr gather
+#' @importFrom stringr str_c
+#' @importFrom readr read_csv
 #' @export
 #' @examples
 #' search_indicator(search="pobreza")
@@ -37,10 +35,9 @@ search_indicator <- function(search,categories='All',countries='All',
 #' @param year Optional.
 #' @param latest Optional. latest data point available
 #' @return A data frame with selected indicators
-#' @import dplyr
-#' @import stringr
-#' @import readr
-#' @importFrom tidyr gather
+#' @importFrom stringr str_c
+#' @importFrom jsonlite fromJSON
+#' @importFrom dplyr as_tibble
 #' @export
 #' @examples
 #' query_indicator(indicator="pobreza,pindi_ci")

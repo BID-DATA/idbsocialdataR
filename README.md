@@ -1,3 +1,7 @@
+![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)
+![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/idbsocialdataR/readme&dt=&tid=UA-4677001-16)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_idbsocialdataR&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_idbsocialdataR)
+
 **SCL Data - Data Ecosystem Working Group**
 
 [![IDB Logo](https://scldata.iadb.org/assets/iadb-7779368a000004449beca0d4fc6f116cc0617572d549edf2ae491e9a17f63778.png)](https://scldata.iadb.org)
@@ -17,19 +21,19 @@ This tool was developed to facilitate the consultation of the region's indicator
 For the moment this package is only available from github. 
 
 R (>= 3.3)
-rlang (1.0.6)
-purrr(0.3.5)
 
 To install the development version:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("EL-BID/idbsocialdataR") 
+devtools::install_github("EL-BID/idbsocialdataR@main") 
 
 # Optional dependency for some functions
 install.packages("sf")
 ```
 
+While installing the package R will ask you to update some packages. Install none of them (option = 3). 
+If you want to update said packages update them in another instruction, and not while installing the library.
 
 # Data
 
@@ -158,7 +162,7 @@ idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020, isoalpha3='All')
 <img src="inst/img/plot_map.png" width=45% >
 
 
-### Author
+### Authors
 - [Roberto Sánchez A.](https://github.com/rsanchezavalos)
 - [María Reyes Retana](https://github.com/mariarrt94)
 
@@ -169,3 +173,11 @@ The IDB is not responsible, under any circumstance, for damage or compensation, 
 
 I. Under any concept of intellectual property, negligence or detriment of another part theory; I
 ii. Following the use of the Digital Tool, including, but not limited to defects in the Digital Tool, or the loss or inaccuracy of data of any kind. The foregoing includes expenses or damages associated with communication failures and / or malfunctions of computers, linked to the use of the Digital Tool.
+
+### Other libraries
+---
+
+You can also find this library in Python and Stata:
+
+- [Library Python](https://github.com/EL-BID/idbsocialdatapy)
+- [Library Stata](https://github.com/BID-DATA/idbsocialdata)
