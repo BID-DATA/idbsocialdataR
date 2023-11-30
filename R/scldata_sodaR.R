@@ -29,7 +29,7 @@ query_indicator_soda <- function(indicator, categories=NULL, countries='All', ye
   }
 
   # List of all possible categories
-  all_categories <- c('area', 'sex', 'quintile', 'education_level', 'age', 'ethnicity')
+  all_categories <- c('area', 'sex', 'quintile', 'education_level', 'age', 'ethnicity','disability')
 
   # If no categories are specified, assume 'Total' for all categories
   if(is.null(categories)){
